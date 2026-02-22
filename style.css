@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  width: 480px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: green;
+  border: 1px solid black;
+  position: relative;
+}
+
+.stone {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.black { background: black; }
+.white { background: white; }
