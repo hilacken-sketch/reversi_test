@@ -96,4 +96,26 @@ function handleClick(y, x) {
   render();
 }
 
+const WEIGHTS = [
+ [100,-20,10,5,5,10,-20,100],
+ [-20,-50,-2,-2,-2,-2,-50,-20],
+ [10,-2,5,1,1,5,-2,10],
+ [5,-2,1,0,0,1,-2,5],
+ [5,-2,1,0,0,1,-2,5],
+ [10,-2,5,1,1,5,-2,10],
+ [-20,-50,-2,-2,-2,-2,-50,-20],
+ [100,-20,10,5,5,10,-20,100]
+];
+
+function evaluate(board, player) {
+  let score = 0;
+  for (let y = 0; y < SIZE; y++) {
+    for (let x = 0; x < SIZE; x++) {
+      if (board[y][x] === player) score += WEIGHTS[y][x];
+      if (board[y][x] !== 0 && board[y][x] !== player) score -= WEIGHTS[y][x];
+    }
+  }
+  return score;
+}
+
 render();
