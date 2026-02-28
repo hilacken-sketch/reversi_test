@@ -1,4 +1,4 @@
-const SIZE = 10;
+const SIZE = 8;
 let board = Array(SIZE).fill().map(() => Array(SIZE).fill(0));
 let currentPlayer = 1; // 1=黒, 2=白
 
