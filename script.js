@@ -1,4 +1,4 @@
-const SIZE = 8;
+const SIZE = 10;
 let board = Array(SIZE).fill().map(() => Array(SIZE).fill(0));
 let currentPlayer = 2; // 1=黒, 2=白
 
@@ -8,10 +8,10 @@ const directions = [
   [1,-1],  [1,0],  [1,1]
 ];
 
-board[3][3] = 2;
-board[3][4] = 1;
-board[4][3] = 1;
-board[4][4] = 2;
+board[5][5] = 2;
+board[5][6] = 1;
+board[6][5] = 1;
+board[6][6] = 2;
 
 function render() {
   const boardDiv = document.getElementById("board");
