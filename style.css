@@ -5,8 +5,8 @@ body {
 
 #board {
   display: grid;
-  grid-template-columns: repeat(8, 60px);
-  width: 480px;
+  grid-template-columns: repeat(10, 60px);
+  width: 600px;
   margin: 20px auto;
 }
 
