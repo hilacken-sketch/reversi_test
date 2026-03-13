@@ -1,6 +1,6 @@
 const SIZE = 8;
 let board = Array(SIZE).fill().map(() => Array(SIZE).fill(0));
-let currentPlayer = 1; // 1=黒, 2=白
+let currentPlayer = 2; // 1=黒, 2=白
 
 const directions = [
   [-1,-1], [-1,0], [-1,1],
